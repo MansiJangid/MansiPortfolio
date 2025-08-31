@@ -275,6 +275,11 @@ body::after {
   transform: rotate(-45deg);
 }
 
+/* .flower{
+  height: 150px;
+  position: relative;
+  z-index: -1;
+} */
 /* General Section Styles */
 .section {
   padding: 60px 60px;
@@ -575,68 +580,73 @@ body::after {
 
 
 /* Skill Section */
-
 .skills-section {
-  padding: 60px 20px;
-  /* background: #f8f9fa; */
-  width: 1200px;
-  max-width: 100%;
-}
+  /* background: linear-gradient(to bottom, #0f172a, #020617); dark gradient */
+  color: white;
+  width: 100%;  
+  padding: 40px 0 90px 0;
 
-.skills-container {
-  margin: auto;
-}
-
-.skills-container h2 {
-  font-size: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
-  margin-bottom: 10px;
-  color: #F5F5F5;
 }
 
-.skills-container p {
-  text-align: center;
-  color: #F5F5F5;
-  margin-bottom: 40px;
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px 30px;
-}
-
-.skill-item {
-  width: 100%;
-}
-
-.skill-info {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 6px;
-  font-size: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.skill-card {
+  background: #fee07f30; /* dark gray */
+  border-radius: 12px;
+  padding: 15px 10px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: float 2s ease-in-out infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Floating / popping animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 1px;
+}
+
+.skill-name {
+  font-size: 0.95rem;
   font-weight: 500;
-  color: #D4AF37;
 }
 
-.progress-bar {
-  background: #e5e5e5;
-  border-radius: 10px;
-  overflow: hidden;
-  height: 12px;
-}
 
-.progress {
-  background: linear-gradient(90deg, #f3d573, #D4AF37);
-  height: 100%;
-  border-radius: 10px;
-  width: 0%; /* start from 0 */
-  transition: width 1.2s ease-in-out;
-}
-
-.progress.animate {
-  /* width is controlled by inline style */
-}
 
 
 /* Work Section */
@@ -656,10 +666,15 @@ body::after {
   padding: 20px;
   border-radius: 10px;
   transition: transform 0.3s;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
 }
 
 .container.dark .work-card {
-  background: #1A2F34;
+  background: #1a2f34d3;
 }
 
 .container.light .work-card {
@@ -951,6 +966,140 @@ body::after {
 
 
 
+/* ========================= */
+/* Light Theme Additions     */
+/* ========================= */
 
+/* Navbar */
+.container.light .nav {
+  background: rgba(245, 245, 245, 0.8);
+}
+.container.light .nav-item {
+  color: #0D1F23;
+}
+.container.light .nav-item:hover {
+  color: #D4AF37;
+}
 
+/* Hero Section */
+.container.light .heading {
+  color: #0D1F23;
+}
+.container.light .primary-button,
+.container.light .secondary-button {
+  background: #D4AF37;
+  color: #0D1F23;
+}
+.container.light .primary-button:hover,
+.container.light .secondary-button:hover {
+  background: #E0C157;
+}
 
+/* Section Headings */
+.container.light .section-heading {
+  color: #0D1F23;
+}
+
+/* About Me Section */
+.about-me-section {
+  background-color: #D4AF37; /* already gold */
+}
+.container.light .about-me-right h3 {
+  color: #0D1F23;
+}
+.container.light .about-me-right p {
+  color: #333;
+}
+
+/* Education Section */
+.container.light .education-section {
+  color: #0D1F23;
+}
+.container.light .timeline-dot,
+.container.light .timeline-line {
+  background-color: #2A4D45;
+}
+.container.light .timeline-content h3 {
+  color: #0D1F23;
+}
+.container.light .timeline-content p,
+.container.light .timeline-content span {
+  color: #5A6A68;
+}
+
+/* Experience Section */
+.container.light .experience-item {
+  background: #E0E0E0;
+}
+.container.light .experience-item h3 {
+  color: #0D1F23;
+}
+.container.light .experience-details {
+  color: #5A6A68;
+}
+
+/* Skills Section */
+.container.light .skills-section {
+  color: #0D1F23;
+}
+.container.light .skill-card {
+  background: #f0e6d430;
+}
+.container.light .skill-name {
+  color: #0D1F23;
+}
+
+/* Work Section */
+.container.light .work-card {
+  background: #E0E0E0;
+}
+.container.light .work-card h3 {
+  color: #0D1F23;
+}
+.container.light .work-card p {
+  color: #5A6A68;
+}
+.container.light .work-link {
+  color: #2A4D45;
+}
+
+/* Blog Section */
+.container.light .blog-post {
+  background: #E0E0E0;
+}
+.container.light .blog-post h3 {
+  color: #0D1F23;
+}
+.container.light .blog-post p {
+  color: #5A6A68;
+}
+.container.light .blog-date {
+  color: #5A6A68;
+}
+.container.light .blog-link {
+  color: #2A4D45;
+}
+
+/* Contact Form */
+.container.light .form-input,
+.container.light .form-textarea {
+  border-color: #0D1F23;
+  background: #F5F5F5;
+  color: #0D1F23;
+}
+.container.light .form-input::placeholder,
+.container.light .form-textarea::placeholder {
+  color: #5A6A68;
+}
+.container.light .success-message {
+  color: #2A4D45;
+}
+
+/* Footer */
+.container.light .footer {
+  background: #F5F5F5;
+  color: #0D1F23;
+}
+.container.light .social-link {
+  color: #2A4D45;
+}

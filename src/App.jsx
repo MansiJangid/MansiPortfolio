@@ -11,6 +11,10 @@ import CompanyCarousel from "./components/SimpleSlider";
 import imgProject from "./assets/profile.jpg";
 import goeco from "./assets/goeco.png";
 import trueVox from "./assets/trueVox.png";
+import portfolio from "./assets/portfolio.png";
+import salary from "./assets/salary.png";
+import hireme from "./assets/hireme.png";
+
 import './App.css';
 
 const App = () => {
@@ -21,11 +25,11 @@ const App = () => {
   };
 
   const projects = [
-    { id: 1, title: 'HireMe', img:imgProject, description: 'A Web Portal for Job Searching & Posting', link: 'https://github.com/MansiJangid/HireMe' },
+    { id: 1, title: 'HireMe', img:hireme, description: 'A Web Portal for Job Searching & Posting', link: 'https://github.com/MansiJangid/HireMe' },
     { id: 2, title: 'GoEco', img:goeco, description: 'Renewable Energy Recommendation System.', link: 'https://github.com/MansiJangid/GoEco' },
     { id: 3, title: 'TrueVox AI', img:trueVox, description: 'Voice Emotion Recognition System.', link: 'https://github.com/MansiJangid/TrueVoxAI' },
-    { id: 4, title: 'Employee Salary Prediction App', img:imgProject, description: 'A Model to Predict Employee Salary.', link: '#' },
-    { id: 5, title: 'Portfolio', img:imgProject, description: 'A Web Based Personal Portfolio', link: '#' },
+    { id: 4, title: 'Employee Salary Prediction App', img:salary, description: 'A Model to Predict Employee Salary.', link: 'https://salary-prediction-app-pr.streamlit.app/' },
+    { id: 5, title: 'Portfolio', img:portfolio, description: 'A Web Based Personal Portfolio', link: '#' },
   ];
 
   const experiences = [

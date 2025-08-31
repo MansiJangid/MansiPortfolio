@@ -59,13 +59,13 @@ const About = () => {
                         I have a strong foundation in core computer science concepts like Data Structures & Algorithms, OOP, Operating Systems, and Networking. I’m driven by curiosity and always eager to learn new tools and techniques to create meaningful, efficient, and impactful solutions.
                     </p>
                     <div className='about-me-icon'>
-                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/mansi-b4533b203/" target="_blank" rel="noopener noreferrer">
                             <img src={linkedin} alt="LinkedIn" />
                         </a>
-                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/MansiJangid" target="_blank" rel="noopener noreferrer">
                             <img src={github} alt="GitHub" />
                         </a>
-                        <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://leetcode.com/u/mansi_2506/" target="_blank" rel="noopener noreferrer">
                             <img src={code} alt="LeetCode" />
                         </a>
                         <a href="https://x.com/" target="_blank" rel="noopener noreferrer">

@@ -1,5 +1,6 @@
 import React from 'react';
-import profileImg from "../assets/profile.jpg";
+import profileImg from "../assets/mansi.jpg";
+// import flower from "../assets/flower.png";
 
 const Hero = () => {
   return (
@@ -11,7 +12,7 @@ const Hero = () => {
         </h1>
         <h2>A Postgraduate Student</h2>
         <div className="button-container">
-          <a href="#resume" className="primary-button">Resume</a>
+          <a href="public\resume.pdf" download className="primary-button">Resume</a>
           <a href="#contact" className="secondary-button">Contact Me</a>
         </div>
       </div>
@@ -25,6 +26,7 @@ const Hero = () => {
           <div className="tape tape-top-left"></div>
           <div className="tape tape-bottom-right"></div>
         </div>
+          {/* <img src={flower} alt="" className="flower"/> */}
       </div>
     </section>
   );
